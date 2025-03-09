@@ -5,11 +5,11 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Animated Header */
+/*Header*/
 header {
     background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91);
-    background-size: 200% 200%; /* Larger than the header to allow animation */
-    animation: gradientAnimation 10s ease infinite; /* Animation */
+    background-size: 200% 200%; 
+    animation: gradientAnimation 10s ease infinite; 
     color: #FAF9F6;
     padding: 50px 0;
     text-align: center;
@@ -21,3 +21,189 @@ header h1 {
     font-size: 3rem;
     font-weight: bold;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
+    }
+}
+
+nav {
+    background: linear-gradient(45deg, #201e56, #d65db1, #201e56);
+    padding: 10px 0;
+    text-align: left;
+}
+
+nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #845ec2; 
+}
+
+.nav-menu {
+    list-style-type: none; 
+    padding: 0;
+}
+
+
+.nav-menu li {
+    margin: 10px 0;
+    padding-left: 30px; 
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.nav-menu li::before {
+    content: "🐱"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center
+}
+
+h2 {
+    color: #FAF9F6;
+    background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+/*About Me Section*/
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/*Skills Section*/
+.skills ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills ul li {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.skills ul li:hover {
+    background-color: #e1e1e1;
+}
+
+/*Cattfolio Section*/
+.catfolio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.catfolio th, .catfolio td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.catfolio th {
+    background: linear-gradient(45deg, #845ec2, #d65db1, #845ec2);
+    color: #fff;
+}
+
+.catfolio tr:hover {
+    background-color: #f1f1f1;
+}
+
+.catfolio img {
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.thumbnail {
+    width: 500px; 
+    height: 600px; 
+    border-radius: 10px; 
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #4a90e2; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #357abd; 
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, #845ec2, #d65db1, #845ec2);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.thumbnail {
+    display: block;
+    width: auto;
+    height: 200px;
+}
+
+
